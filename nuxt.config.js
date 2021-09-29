@@ -1,4 +1,9 @@
 export default {
+  target: "static",
+  ssr: false,
+  generate: {
+    fallback: true
+  },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     clientId: process.env.CLIENT_ID || 'a31f0360',
